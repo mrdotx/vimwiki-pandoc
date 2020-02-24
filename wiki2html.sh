@@ -3,7 +3,7 @@
 # path:       ~/projects/vimwiki-pandoc/wiki2html.sh
 # author:     klassiker [mrdotx]
 # github:     https://github.com/mrdotx/vimwiki-pandoc
-# date:       2020-02-03T13:52:13+0100
+# date:       2020-02-24T12:28:37+0100
 
 # argument parsing
 # do not overwrite (0) or overwrite (1)
@@ -60,7 +60,7 @@ regex3='/\#+[a-zA-Z0-9_.+-]*\.html/s/\.html//g'
 regex4='s/file://g'
 
 pandoc_input=$(< "$input" sed -r "$regex1;$regex2;$regex3;$regex4")
-pandoc_output=$(echo "$pandoc_input" | $pandoc_template)
+pandoc_output=$(printf "%s\n" "$pandoc_input" | $pandoc_template)
 
 # postpandoc processing
-echo "$pandoc_output" > "$output.html"
+printf "%s\n" "$pandoc_output" > "$output.html"
