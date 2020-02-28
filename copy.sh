@@ -1,9 +1,9 @@
 #!/bin/sh
 
-# path:       ~/projects/vimwiki-pandoc/copy.sh
+# path:       ~/repos/vimwiki-pandoc/copy.sh
 # author:     klassiker [mrdotx]
 # github:     https://github.com/mrdotx/vimwiki-pandoc
-# date:       2020-02-24T12:31:02+0100
+# date:       2020-02-28T08:32:39+0100
 
 notes="$HOME/Dokumente/Notes/html"
 

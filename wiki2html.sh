@@ -1,9 +1,9 @@
 #!/bin/sh
 
-# path:       ~/projects/vimwiki-pandoc/wiki2html.sh
+# path:       ~/repos/vimwiki-pandoc/wiki2html.sh
 # author:     klassiker [mrdotx]
 # github:     https://github.com/mrdotx/vimwiki-pandoc
-# date:       2020-02-24T12:28:37+0100
+# date:       2020-02-28T08:32:49+0100
 
 # argument parsing
 # do not overwrite (0) or overwrite (1)
