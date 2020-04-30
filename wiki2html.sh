@@ -3,11 +3,11 @@
 # path:       /home/klassiker/.local/share/repos/vimwiki-pandoc/wiki2html.sh
 # author:     klassiker [mrdotx]
 # github:     https://github.com/mrdotx/vimwiki-pandoc
-# date:       2020-04-29T11:21:31+0200
+# date:       2020-04-30T19:19:03+0200
 
 # argument parsing
 # do not overwrite (0) or overwrite (1)
-#overwrite="$1"
+# overwrite="$1"
 # syntax chosen for the wiki
 syntax="$2"
 # file extension for the wiki
