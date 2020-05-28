@@ -3,7 +3,7 @@
 # path:       /home/klassiker/.local/share/repos/vimwiki-pandoc/wiki2html.sh
 # author:     klassiker [mrdotx]
 # github:     https://github.com/mrdotx/vimwiki-pandoc
-# date:       2020-04-30T19:19:03+0200
+# date:       2020-05-29T00:34:37+0200
 
 # argument parsing
 # do not overwrite (0) or overwrite (1)
@@ -42,7 +42,7 @@ mathjax="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HT
 
 # prepandoc processing and pandoc
 pandoc_template="pandoc \
-    --toc
+    --toc \
     --mathjax=$mathjax \
     --template=$template_path$template_default$template_ext \
     -f $syntax \
