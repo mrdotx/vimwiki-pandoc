@@ -3,7 +3,7 @@
 # path:       /home/klassiker/.local/share/repos/vimwiki-pandoc/wiki2html.sh
 # author:     klassiker [mrdotx]
 # github:     https://github.com/mrdotx/vimwiki-pandoc
-# date:       2020-05-29T00:34:37+0200
+# date:       2020-10-19T19:34:39+0200
 
 # argument parsing
 # do not overwrite (0) or overwrite (1)
@@ -28,7 +28,8 @@ template_ext="$9"
 root_path="${10}"
 
 # if file is in vimwiki base dir, the root path is '-'
-[ "$root_path" = "-" ] && root_path=''
+[ "$root_path" = "-" ] \
+    && root_path=''
 
 # example: index.md
 file_name=$(basename "$input" ."$extension")
