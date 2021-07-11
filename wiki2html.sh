@@ -3,7 +3,7 @@
 # path:   /home/klassiker/.local/share/repos/vimwiki-pandoc/wiki2html.sh
 # author: klassiker [mrdotx]
 # github: https://github.com/mrdotx/vimwiki-pandoc
-# date:   2021-01-15T14:06:38+0100
+# date:   2021-07-11T12:00:24+0200
 
 # argument parsing
 # do not overwrite (0) or overwrite (1)
@@ -33,7 +33,7 @@ root_path="${10}"
 
 # example: index.md
 file_name=$(basename "$input" ."$extension")
-# example: /home/klassiker/Dokumente/Notes/index.md
+# example: /home/klassiker/Documents/Notes/index.md
 output=$output_dir$file_name
 
 # pandoc arguments
