@@ -3,7 +3,7 @@
 # path:   /home/klassiker/.local/share/repos/vimwiki-pandoc/wiki2html.sh
 # author: klassiker [mrdotx]
 # github: https://github.com/mrdotx/vimwiki-pandoc
-# date:   2021-07-11T12:00:24+0200
+# date:   2021-12-21T10:10:29+0100
 
 # argument parsing
 # do not overwrite (0) or overwrite (1)
@@ -60,7 +60,7 @@ regex3='/\#+[a-zA-Z0-9_.+-]*\.html/s/\.html//g'
 # removes "file" from ![pic of sharks](file:../sharks.jpg)
 regex4='s/file://g'
 
-pandoc_input=$(< "$input" sed -r "$regex1;$regex2;$regex3;$regex4")
+pandoc_input=$(sed -r "$regex1;$regex2;$regex3;$regex4" "$input")
 pandoc_output=$(printf "%s\n" "$pandoc_input" | $pandoc_template)
 
 # postpandoc processing
