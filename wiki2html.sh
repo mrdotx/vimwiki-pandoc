@@ -3,7 +3,7 @@
 # path:   /home/klassiker/.local/share/repos/vimwiki-pandoc/wiki2html.sh
 # author: klassiker [mrdotx]
 # github: https://github.com/mrdotx/vimwiki-pandoc
-# date:   2021-12-21T10:10:29+0100
+# date:   2022-08-25T20:19:44+0200
 
 # argument parsing
 # do not overwrite (0) or overwrite (1)
@@ -38,18 +38,18 @@ output=$output_dir$file_name
 
 # pandoc arguments
 # if you have Mathjax locally use this:
-mathjax="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 # mathjax="/usr/share/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+mathjax="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 
-# prepandoc processing and pandoc
+# pandoc processing
 pandoc_template="pandoc \
-    --toc \
+    --table-of-contents \
     --mathjax=$mathjax \
     --template=$template_path$template_default$template_ext \
-    -f $syntax \
-    -t html \
-    -c $css_file \
-    -M root_path:$root_path"
+    --from $syntax \
+    --to html \
+    --css $css_file \
+    --metadata root_path:$root_path"
 
 # searches for markdown links (without extension or .md) and appends a .html
 regex1='s/(\[.+\])\(([^.)]+)(\.md)?\)/\1(\2.html)/g'
@@ -63,5 +63,5 @@ regex4='s/file://g'
 pandoc_input=$(sed -r "$regex1;$regex2;$regex3;$regex4" "$input")
 pandoc_output=$(printf "%s\n" "$pandoc_input" | $pandoc_template)
 
-# postpandoc processing
+# post pandoc processing
 printf "%s\n" "$pandoc_output" > "$output.html"
