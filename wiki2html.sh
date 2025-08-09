@@ -2,8 +2,8 @@
 
 # path:   /home/klassiker/.local/share/repos/vimwiki-pandoc/wiki2html.sh
 # author: klassiker [mrdotx]
-# github: https://github.com/mrdotx/vimwiki-pandoc
-# date:   2022-08-25T20:19:44+0200
+# url:    https://github.com/mrdotx/vimwiki-pandoc
+# date:   2025-08-09T06:05:27+0200
 
 # argument parsing
 # do not overwrite (0) or overwrite (1)
