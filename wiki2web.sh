@@ -3,12 +3,12 @@
 # path:   /home/klassiker/.local/share/repos/vimwiki-pandoc/wiki2web.sh
 # author: klassiker [mrdotx]
 # url:    https://github.com/mrdotx/vimwiki-pandoc
-# date:   2026-02-17T05:57:57+0100
+# date:   2026-03-31T05:34:17+0200
 
 source_folder="$HOME/Documents/Notes/html/"
 destination_folder="/srv/http/wiki"
 
-# color variables for interactive shell
+# color variables for the interactive shell
 tty -s \
     && reset="\033[0m" \
     && bold="\033[1m" \
