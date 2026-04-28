@@ -2,9 +2,9 @@
 
 shell scripts and templates for vimwiki/pandoc
 
-| folder   | comment                                   |
-| :------- | :---------------------------------------- |
-| template | templates for converting markdown to html |
+| directory | comment                                   |
+| :-------- | :---------------------------------------- |
+| template  | templates for converting markdown to html |
 
 | file         | comment                                            |
 | :----------- | :------------------------------------------------- |
