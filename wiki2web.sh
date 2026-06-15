@@ -1,9 +1,9 @@
 #!/bin/sh
 
-# path:   /home/klassiker/.local/share/repos/vimwiki-pandoc/wiki2web.sh
+# path:   /home/klassiker/Projects/repos/vimwiki-pandoc/wiki2web.sh
 # author: klassiker [mrdotx]
 # url:    https://github.com/mrdotx/vimwiki-pandoc
-# date:   2026-05-07T05:32:47+0200
+# date:   2026-06-15T04:44:15+0200
 
 source_dir="$HOME/Documents/Notes/html/"
 destination_dir="/srv/http/wiki"
